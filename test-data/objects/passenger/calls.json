@@ -1,0 +1,51 @@
+{
+  "object": "Passenger",
+  "calls": [
+    {
+      "operation": "gRPC PassengerGrpcService/GetById",
+      "kind": "grpc",
+      "file": "src/Passenger/GrpcServer/Protos/passenger.proto:7",
+      "request": "GetByIdRequest",
+      "requestFields": [
+        "Id"
+      ],
+      "response": "GetPassengerByIdResult",
+      "object": "Passenger"
+    },
+    {
+      "operation": "GET api/v1/passenger/{{id}}",
+      "kind": "http",
+      "file": "src/Passenger/Passengers/Features/GettingPassengerById/V1/GetPassengerById.cs:30",
+      "request": null,
+      "response": "GetPassengerByIdResponseDto",
+      "path": "api/v1/passenger/{id}",
+      "valid": [
+        {
+          "ref": "passenger-maria-gonzalez",
+          "params": {
+            "id": "b1de2c73-0000-4000-8000-000000001012"
+          }
+        },
+        {
+          "ref": "passenger-wei-zhang",
+          "params": {
+            "id": "b1de2c73-0000-4000-8000-000000001013"
+          }
+        },
+        {
+          "ref": "passenger-aisha-rahman",
+          "params": {
+            "id": "b1de2c73-0000-4000-8000-000000001014"
+          }
+        },
+        {
+          "ref": "passenger-james-o-connor",
+          "params": {
+            "id": "b1de2c73-0000-4000-8000-000000001015"
+          }
+        }
+      ],
+      "object": "Passenger"
+    }
+  ]
+}

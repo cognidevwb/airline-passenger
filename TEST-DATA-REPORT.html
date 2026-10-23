@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test data — generation report</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; background:#fff; color:#1b1b1b;
+         font:16px/1.6 "Inter","Helvetica Neue",Arial,sans-serif; }
+  main { max-width:60rem; margin:0 auto; padding:3rem 1.5rem 5rem; }
+  h1 { font-size:1.9rem; font-weight:600; margin:0 0 .35rem; letter-spacing:-.01em; }
+  h2 { font-size:1.15rem; font-weight:600; margin:2.75rem 0 .75rem;
+        padding-bottom:.4rem; border-bottom:2px solid #1a5fb4; }
+  h3 { font-size:1rem; font-weight:600; margin:1.75rem 0 .5rem; color:#1a5fb4; }
+  p  { margin:.6rem 0; }
+  .lede { color:#4a4a4a; margin:0 0 1.5rem; }
+  table { border-collapse:collapse; width:100%; margin:.75rem 0 1.25rem; font-size:.92rem; }
+  th { text-align:left; font-weight:600; border-bottom:1px solid #1a5fb4;
+        padding:.45rem .6rem; white-space:nowrap; }
+  td { border-bottom:1px solid #e6e6e6; padding:.45rem .6rem; vertical-align:top; }
+  td.n, th.n { text-align:right; font-variant-numeric:tabular-nums; }
+  code { font:.88em ui-monospace,SFMono-Regular,Menlo,monospace; background:#f4f6f9;
+          padding:.08rem .3rem; border-radius:2px; }
+  .rail { border-left:3px solid #1a5fb4; padding:.15rem 0 .15rem .9rem; margin:1rem 0; }
+  .warn { border-left-color:#a04b00; }
+  .ok  { color:#1a5fb4; font-weight:600; }
+  .no  { color:#a04b00; font-weight:600; }
+  .scroll { overflow-x:auto; }
+  ul { margin:.5rem 0 1rem; padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  .meta { font-size:.85rem; color:#606060; }
+</style></head><body><main><h1>Test data — generation report</h1>
+<p class="lede">279 rows across 9 entities, written to <code>test-data</code> as sql_insert, json, csv. The coverage guarantee is <strong>pairwise</strong>.</p>
+<h2>What was generated</h2>
+<div class="scroll"><table>
+<tr><th>Measure</th><th class="n">Count</th><th>From</th></tr>
+<tr><td>Entities</td><td class="n">9</td><td class="meta">one dataset each</td></tr>
+<tr><td>Columns</td><td class="n">46</td><td class="meta">every column of every entity</td></tr>
+<tr><td>Value classes</td><td class="n">104</td><td class="meta">the domains actually combined</td></tr>
+<tr><td>Rows written</td><td class="n">279</td><td class="meta">counted off the emitted rows</td></tr>
+<tr><td>— covering</td><td class="n">94</td><td class="meta">carry the coverage guarantee</td></tr>
+<tr><td>— negative</td><td class="n">58</td><td class="meta">one declared violation each</td></tr>
+<tr><td>— filler</td><td class="n">0</td><td class="meta">bulk to reach the row target</td></tr>
+<tr><td>Dataset files written</td><td class="n">37</td><td class="meta">counted on disk after writing — every format, plus the SQL reset script</td></tr>
+<tr><td>Referential edges satisfied</td><td class="n">0</td><td class="meta">parents generated first</td></tr>
+</table></div>
+<div class="rail"><p>no row target — the covering set and its negative records only</p></div>
+<h2>Layers</h2>
+<p>Every entity is in exactly one of four layers — UI &amp; API surface, domain objects, cache, database — decided from facts the structural pass recorded and never from a name, and written under its own directory. The rule that placed each entity is printed on it below, so a placement is disputed against evidence rather than against the tool.</p>
+<div class="scroll"><table>
+<tr><th>Layer</th><th>Directory</th><th class="n">Entities</th><th class="n">Rows</th><th class="n">Files</th><th class="n">In the whole model</th><th>Written for</th></tr>
+<tr><td>UI &amp; API surface</td><td><code>test-data/ui/</code></td><td class="n">1</td><td class="n">1</td><td class="n">3</td><td class="n">5</td><td class="meta">component tests, form validation tests, and integration tests that post to the service</td></tr>
+<tr><td>Domain objects</td><td><code>test-data/domain/</code></td><td class="n">6</td><td class="n">203</td><td class="n">13</td><td class="n">23</td><td class="meta">unit tests of the business logic, and the builders a test suite constructs its objects with</td></tr>
+<tr><td>Cache</td><td><code>test-data/cache/</code></td><td class="n">not selected</td><td class="n">0</td><td class="n">1</td><td class="n">0</td><td class="meta">tests of cache-aware code — a hit, a miss and a stale read, arranged rather than hoped for</td></tr>
+<tr><td>Database</td><td><code>test-data/db/</code></td><td class="n">2</td><td class="n">75</td><td class="n">9</td><td class="n">8</td><td class="meta">loading a database before an integration test, and testing the constraints themselves</td></tr>
+</table></div>
+<p>3 of 4 layers selected; 9 entities assigned across them against 9 generated. Every layer directory carries a <code>README.md</code> stating what it holds or why it is empty. Entity files written outside their own layer's directory: <strong>0</strong>.</p>
+<p>HTTP routes: the model carries <strong>1</strong>, this run generated <strong>1</strong>, dropped <strong>0</strong>.</p>
+<p class="meta">What the rules read: layers.json — 92 file(s) classified into architectural layers by the structural pass · roles.json — 33 file(s) carry a role; 0 marked `cache` · externals.json — 0 cache access(es) recorded, each with its file, method, mode and key</p>
+<div class="rail"><p><strong>18</strong> entities declared in files roles.json marks <code>test</code> were left out of every layer. Test code is not a layer of the application; a parameter list on a test method is not an input anyone sends. They are listed in <code>generation.json</code> under <code>layers.test_code_skipped_entities</code>.</p></div>
+<h2>The coverage guarantee</h2>
+<p>every pair of values from every pair of columns appears in at least one row. Summed across the entities, the full cross-product over the same domains is <strong>1370</strong> rows; the covering set is <strong>94</strong>, a reduction of 15×.</p>
+<p>The guarantee was re-checked for every entity against the covering array that was built: each required combination was searched for and found. The check is made against the array, not against the emitted rows.</p>
+<p class="meta">Byte digest of everything written: <code>d4ae58f9eaede9dc</code>. Regenerating from the same model and answers inside this run produced the same digest.</p>
+<h2>Referential integrity</h2>
+<p>The schema <strong>declares 0</strong> foreign key column(s), across 0 table-to-table relation(s) — one relation covers every column that points the same way. A further <strong>0</strong> edge(s) were <strong>derived</strong> from the model where no <code>REFERENCES</code> clause exists — a column whose name is another table's primary key, or a primary key shared with another table. A derived edge is an inference; a declared one is what the schema states.</p>
+<p>Load order (parents first): <code>Passenger</code>.</p>
+<h2>Each object that was covered</h2>
+<h3>Passenger</h3>
+<p class="meta">table · <code>src/Passenger/Passengers/Models/Passenger.cs:9</code> · 11 column(s), 10 of them combined · layer <strong>Database</strong> — an ORM-mapped entity the structural pass marks as persisted — a table shape declared in code</p>
+<p>12 covering + 10 negative + 0 filler = <strong>37</strong> rows. The full cross-product over the same domains is 1024 rows (the structural pass counted 629856 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>primary key (surrogate)</td><td>no — assigned</td><td class="n">0</td><td class="meta"></td></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>PassportNumber</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">"" [model] · typical STR_0001 [generated]</td></tr>
+<tr><td><code>Name</code> <span class="meta">NOT NULL</span></td><td>Name</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">"" [model] · typical Alice Whitfield [generated]</td></tr>
+<tr><td><code>PassengerType</code> <span class="meta">NOT NULL</span></td><td>Enums.PassengerType</td><td>value</td><td>yes</td><td class="n">4</td><td class="meta">Unknown [model] · Male [model] · Female [model] · Baby [model]</td></tr>
+<tr><td><code>Age</code></td><td>Age?</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 18 [generated]</td></tr>
+<tr><td><code>Version</code> <span class="meta">NOT NULL</span></td><td>long</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 100 [generated]</td></tr>
+<tr><td><code>CreatedAt</code></td><td>DateTime?</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">valid date [model] · typical 2026-01-01T00:00:00Z [generated]</td></tr>
+<tr><td><code>CreatedBy</code></td><td>long?</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 100 [generated]</td></tr>
+<tr><td><code>IsDeleted</code> <span class="meta">NOT NULL</span></td><td>bool</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">typical true [generated]</td></tr>
+<tr><td><code>LastModified</code></td><td>DateTime?</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">valid date [model] · typical 2026-01-01T00:00:00Z [generated]</td></tr>
+<tr><td><code>LastModifiedBy</code></td><td>long?</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 100 [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — Passenger has fewer than two date columns to order; totals_consistent — Passenger has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — Passenger has no currency column.</p>
+<p class="meta">Written: <code>test-data/db/Passenger.csv</code>, <code>test-data/db/Passenger.json</code>, <code>test-data/db/sql/010_Passenger.sql</code>, <code>test-data/db/sql/010_Passenger_invalid.sql</code></p>
+<h3>CompleteRegisterPassenger</h3>
+<p class="meta">application type · <code>src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs:21</code> · 4 column(s), 4 of them combined · layer <strong>Domain objects</strong> — declared in `src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>12 covering + 6 negative + 0 filler = <strong>34</strong> rows. The full cross-product over the same domains is 24 rows (the structural pass counted 162 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical GBR548201773 [generated]</td></tr>
+<tr><td><code>PassengerType</code> <span class="meta">NOT NULL</span></td><td>Enums.PassengerType</td><td>value</td><td>yes</td><td class="n">4</td><td class="meta">Unknown [model] · Male [model] · Female [model] · Baby [model]</td></tr>
+<tr><td><code>Age</code> <span class="meta">NOT NULL</span></td><td>int</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 18 [generated]</td></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — CompleteRegisterPassenger has fewer than two date columns to order; totals_consistent — CompleteRegisterPassenger has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — CompleteRegisterPassenger has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/CompleteRegisterPassenger.csv</code>, <code>test-data/domain/CompleteRegisterPassenger.json</code></p>
+<h3>CompleteRegisterPassengerMongoCommand</h3>
+<p class="meta">application type · <code>src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassengerMongo.cs:14</code> · 6 column(s), 6 of them combined · layer <strong>Domain objects</strong> — declared in `src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassengerMongo.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>12 covering + 8 negative + 0 filler = <strong>36</strong> rows. The full cross-product over the same domains is 72 rows (the structural pass counted 1458 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical GBR548201773 [generated]</td></tr>
+<tr><td><code>Name</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Alice Whitfield [generated]</td></tr>
+<tr><td><code>PassengerType</code> <span class="meta">NOT NULL</span></td><td>Enums.PassengerType</td><td>value</td><td>yes</td><td class="n">4</td><td class="meta">Unknown [model] · Male [model] · Female [model] · Baby [model]</td></tr>
+<tr><td><code>Age</code> <span class="meta">NOT NULL</span></td><td>int</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 18 [generated]</td></tr>
+<tr><td><code>IsDeleted</code> <span class="meta">NOT NULL</span></td><td>bool</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">typical true [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — CompleteRegisterPassengerMongoCommand has fewer than two date columns to order; totals_consistent — CompleteRegisterPassengerMongoCommand has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — CompleteRegisterPassengerMongoCommand has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/CompleteRegisterPassengerMongoCommand.csv</code>, <code>test-data/domain/CompleteRegisterPassengerMongoCommand.json</code></p>
+<h3>CompleteRegisterPassengerRequestDto</h3>
+<p class="meta">application type · <code>src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs:39</code> · 3 column(s), 3 of them combined · layer <strong>Domain objects</strong> — declared in `src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>12 covering + 4 negative + 0 filler = <strong>32</strong> rows. The full cross-product over the same domains is 24 rows (the structural pass counted 54 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical GBR548201773 [generated]</td></tr>
+<tr><td><code>PassengerType</code> <span class="meta">NOT NULL</span></td><td>Enums.PassengerType</td><td>value</td><td>yes</td><td class="n">4</td><td class="meta">Unknown [model] · Male [model] · Female [model] · Baby [model]</td></tr>
+<tr><td><code>Age</code> <span class="meta">NOT NULL</span></td><td>int</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 18 [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — CompleteRegisterPassengerRequestDto has fewer than two date columns to order; totals_consistent — CompleteRegisterPassengerRequestDto has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — CompleteRegisterPassengerRequestDto has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/CompleteRegisterPassengerRequestDto.csv</code>, <code>test-data/domain/CompleteRegisterPassengerRequestDto.json</code></p>
+<h3>PassengerCreatedDomainEvent</h3>
+<p class="meta">application type · <code>src/Passenger/Identity/Consumers/RegisteringNewUser/V1/PassengerCreatedDomainEvent.cs:5</code> · 4 column(s), 4 of them combined · layer <strong>Domain objects</strong> — declared in `src/Passenger/Identity/Consumers/RegisteringNewUser/V1/PassengerCreatedDomainEvent.cs`, which layers.json classifies `queue` — business logic by default</p>
+<p>9 covering + 5 negative + 0 filler = <strong>30</strong> rows. The full cross-product over the same domains is 9 rows (the structural pass counted 81 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Name</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Alice Whitfield [generated]</td></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical GBR548201773 [generated]</td></tr>
+<tr><td><code>IsDeleted</code> <span class="meta">NOT NULL</span></td><td>bool</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">typical true [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — PassengerCreatedDomainEvent has fewer than two date columns to order; totals_consistent — PassengerCreatedDomainEvent has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — PassengerCreatedDomainEvent has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/PassengerCreatedDomainEvent.csv</code>, <code>test-data/domain/PassengerCreatedDomainEvent.json</code></p>
+<h3>PassengerDto</h3>
+<p class="meta">application type · <code>src/Passenger/Passengers/Dtos/PassengerDto.cs:3</code> · 5 column(s), 5 of them combined · layer <strong>Domain objects</strong> — declared in `src/Passenger/Passengers/Dtos/PassengerDto.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>12 covering + 7 negative + 0 filler = <strong>35</strong> rows. The full cross-product over the same domains is 72 rows (the structural pass counted 486 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Name</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Alice Whitfield [generated]</td></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical GBR548201773 [generated]</td></tr>
+<tr><td><code>PassengerType</code> <span class="meta">NOT NULL</span></td><td>Enums.PassengerType</td><td>value</td><td>yes</td><td class="n">4</td><td class="meta">Unknown [model] · Male [model] · Female [model] · Baby [model]</td></tr>
+<tr><td><code>Age</code> <span class="meta">NOT NULL</span></td><td>int</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 18 [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — PassengerDto has fewer than two date columns to order; totals_consistent — PassengerDto has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — PassengerDto has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/PassengerDto.csv</code>, <code>test-data/domain/PassengerDto.json</code></p>
+<h3>PassengerReadModel</h3>
+<p class="meta">application type · <code>src/Passenger/Passengers/Models/PassengerReadModel.cs:3</code> · 7 column(s), 7 of them combined · layer <strong>Database</strong> — declared in `src/Passenger/Passengers/Models/PassengerReadModel.cs`, which layers.json classifies `database`</p>
+<p>12 covering + 10 negative + 0 filler = <strong>38</strong> rows. The full cross-product over the same domains is 72 rows (the structural pass counted 4374 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>PassengerId</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical GBR548201773 [generated]</td></tr>
+<tr><td><code>Name</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Alice Whitfield [generated]</td></tr>
+<tr><td><code>PassengerType</code> <span class="meta">NOT NULL</span></td><td>Enums.PassengerType</td><td>value</td><td>yes</td><td class="n">4</td><td class="meta">Unknown [model] · Male [model] · Female [model] · Baby [model]</td></tr>
+<tr><td><code>Age</code> <span class="meta">NOT NULL</span></td><td>int</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 18 [generated]</td></tr>
+<tr><td><code>IsDeleted</code> <span class="meta">NOT NULL</span></td><td>bool</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">typical true [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — PassengerReadModel has fewer than two date columns to order; totals_consistent — PassengerReadModel has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — PassengerReadModel has no currency column.</p>
+<p class="meta">Written: <code>test-data/db/PassengerReadModel.csv</code>, <code>test-data/db/PassengerReadModel.json</code></p>
+<h3>PassengerRegistrationCompletedDomainEvent</h3>
+<p class="meta">application type · <code>src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs:28</code> · 6 column(s), 6 of them combined · layer <strong>Domain objects</strong> — declared in `src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs`, which layers.json classifies `core` — business logic by default</p>
+<p>12 covering + 8 negative + 0 filler = <strong>36</strong> rows. The full cross-product over the same domains is 72 rows (the structural pass counted 1458 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+<tr><td><code>Id</code> <span class="meta">NOT NULL</span></td><td>Guid</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">valid uuid [model]</td></tr>
+<tr><td><code>Name</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical Alice Whitfield [generated]</td></tr>
+<tr><td><code>PassportNumber</code> <span class="meta">NOT NULL</span></td><td>string</td><td>value</td><td>yes</td><td class="n">3</td><td class="meta">"" [model] · "text" [model] · typical GBR548201773 [generated]</td></tr>
+<tr><td><code>PassengerType</code> <span class="meta">NOT NULL</span></td><td>Enums.PassengerType</td><td>value</td><td>yes</td><td class="n">4</td><td class="meta">Unknown [model] · Male [model] · Female [model] · Baby [model]</td></tr>
+<tr><td><code>Age</code> <span class="meta">NOT NULL</span></td><td>int</td><td>value</td><td>yes</td><td class="n">2</td><td class="meta">1 [model] · typical 18 [generated]</td></tr>
+<tr><td><code>IsDeleted</code> <span class="meta">NOT NULL</span></td><td>bool</td><td>value</td><td>yes</td><td class="n">1</td><td class="meta">typical true [generated]</td></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — PassengerRegistrationCompletedDomainEvent has fewer than two date columns to order; totals_consistent — PassengerRegistrationCompletedDomainEvent has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — PassengerRegistrationCompletedDomainEvent has no currency column.</p>
+<p class="meta">Written: <code>test-data/domain/PassengerRegistrationCompletedDomainEvent.csv</code>, <code>test-data/domain/PassengerRegistrationCompletedDomainEvent.json</code></p>
+<h3>GET /</h3>
+<p class="meta">HTTP route · <code>src/Passenger/Extensions/Infrastructure/InfrastructureExtensions.cs:88</code> · 0 column(s), 0 of them combined · layer <strong>UI &amp; API surface</strong> — an HTTP route — the request the client sends, as contracts.json declares it</p>
+<p>1 covering + 0 negative + 0 filler = <strong>1</strong> rows. The full cross-product over the same domains is 1 rows (the structural pass counted 1 over all its classes, including the invalid ones and the key columns this run assigns rather than combines). Guarantee: <span class="ok">verified</span>.</p>
+<div class="scroll"><table>
+<tr><th>Column</th><th>Declared type</th><th>Role</th><th class="n">Classes</th><th>Value classes used</th></tr>
+</table></div>
+<p class="meta">Rules with nothing to act on here: dates_ordered — GET / has fewer than two date columns to order; totals_consistent — GET / has no subtotal/tax_total/grand_total or quantity/unit_price/line_total group; currency_matched — GET / has no currency column.</p>
+<p class="meta">Written: <code>test-data/ui/GET--.csv</code>, <code>test-data/ui/GET--.json</code></p>
+<h2>Type conformance</h2>
+<p>Every emitted value was checked back against the declared type of the column it went into. Values in the loadable set that the declared type cannot hold: <strong>0</strong>. In negative rows, outside the one column each is tagged against: <strong>0</strong>.</p>
+<h2>Cache</h2>
+<p>The cache layer was not selected. <code>externals.json</code> records <strong>0</strong> cache access(es) and roles.json marks <strong>0</strong> file(s) <code>cache</code>; nothing was generated for them.</p>
+<h2>Fit to read</h2>
+<p>This page is a report ABOUT the generation. To LOOK at the data — page through the rows of any entity, tell a boundary probe from bulk, and read the rule each negative record breaks — open <code>test-data/TEST-DATA-BROWSER.html</code>, written beside the datasets. It embeds 279 of the 279 generated rows, up to 50 of each kind per entity, and states the cut on every entity it applies to.</p>
+<p>Type conformance says a value can be LOADED. These say it can be READ, counted over the same emitted rows. Text values in the loadable set that are a run of one repeated character: <strong>0</strong>. Columns holding one value in every loadable row: <strong>0</strong>, of which <strong>0</strong> had more than one value available and did not use it. Covering rows carrying two datetime columns the schema declares as a pair the wrong way round: <strong>0</strong>, across 0 entities.</p>
+<h2>Answers this run could not act on</h2>
+<div class="scroll"><table>
+<tr><th>Question</th><th>Answer</th><th>Why not</th><th>What happened instead</th></tr>
+<tr><td><code>business_domain</code></td><td><code>Airline reservations: aircraft, airports, flights and seats, passengers with passports, and bookings that reserve a seat</code></td><td>this run is deterministic; no reference values exist for the named domain yet</td><td>values from the repository's own tests first, then from the column name and the declared type</td></tr>
+</table></div>
+<ul>
+<li>27 method signature(s) in the code were not generated — a method's inputs are the objects and commands generated above; only methods that use a cache and database routines are datasets of their own</li>
+</ul>
+<h2>Scope and limitations</h2>
+<ul>
+<li>Targets asked for: . Read from: permutations.json — value classes per column; datamodel.json — declared constraints, including the unique key; schema.json — the declared relation count.</li>
+<li>Values are labelled and the locale is <code>en-GB</code>. Generated by the CogniDev generate-test-data playbook. No value here is derived from production data.</li>
+<li>CSV writes SQL NULL as an empty unquoted field and the empty string as <code>""</code>. That is the only distinction CSV can carry.</li>
+<li>A <code>BIT</code> column takes one spelling per format, and only one: <code>1</code> / <code>0</code> in SQL and CSV, which is what a bit column loads from; JSON's own <code>true</code> / <code>false</code>. Whatever a value class or a declared <code>DEFAULT</code> was written as, the output is uniform.</li>
+<li>A <code>DATE</code> column carries a date and no time. Every other date type keeps its time — the distinction is read from the declared type name, not from the base type.</li>
+<li>A length boundary binds EXACTLY the declared width, and is shaped to the column's own kind at that width: an address for an email column, whole name parts for a person, whole words for free text, a value from the declared vocabulary where one is that long. Where nothing states what the column holds it takes a generated CODE rather than a phrase cut mid-word — an obviously synthetic token beats a value that pretends to be content. Negative records keep the structural value verbatim: their job is to be rejected, and reshaping them would change the rule each one breaks.</li>
+<li>Negative rows are written to their own SQL script. By construction they do not load into a schema with its constraints enabled.</li>
+<li>A generated value marked <code>[generated]</code> is a readable representative this tool invented. It is not evidence of anything the schema declares.</li>
+</ul>
+</main></body></html>

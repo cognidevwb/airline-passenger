@@ -1,0 +1,15 @@
+{
+  "id": "invalidpassportnumberexception-passportnumber",
+  "title": "PassportNumber that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidPassportNumberException",
+  "base": "BadRequestException",
+  "thrownAt": "src/Passenger/Passengers/ValueObjects/PassportNumber.cs:23",
+  "condition": "if (string.IsNullOrWhiteSpace(value))",
+  "field": "PassportNumber",
+  "expect": {
+    "status": 400,
+    "error": "InvalidPassportNumberException",
+    "note": null
+  }
+}

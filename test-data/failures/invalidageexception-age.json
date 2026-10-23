@@ -1,0 +1,15 @@
+{
+  "id": "invalidageexception-age",
+  "title": "Age that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidAgeException",
+  "base": "BadRequestException",
+  "thrownAt": "src/Passenger/Passengers/ValueObjects/Age.cs:18",
+  "condition": "if (value <= 0)",
+  "field": "Age",
+  "expect": {
+    "status": 400,
+    "error": "InvalidAgeException",
+    "note": null
+  }
+}

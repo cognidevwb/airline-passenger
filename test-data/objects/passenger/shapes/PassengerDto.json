@@ -1,0 +1,443 @@
+{
+  "shape": "PassengerDto",
+  "role": "response",
+  "source": "src/Passenger/Passengers/Dtos/PassengerDto.cs:3",
+  "columns": [
+    "Id",
+    "Name",
+    "PassportNumber",
+    "PassengerType",
+    "Age"
+  ],
+  "records": [
+    {
+      "ref": "passenger-maria-gonzalez-4",
+      "kind": "record",
+      "data": {
+        "Age": 34,
+        "Id": "b1de2c73-0000-4000-8000-000000001012",
+        "Name": "Maria Gonzalez",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001019"
+      }
+    },
+    {
+      "ref": "passenger-wei-zhang-4",
+      "kind": "record",
+      "data": {
+        "Age": 41,
+        "Id": "b1de2c73-0000-4000-8000-000000001013",
+        "Name": "Wei Zhang",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001020"
+      }
+    },
+    {
+      "ref": "passenger-aisha-rahman-4",
+      "kind": "record",
+      "data": {
+        "Age": 27,
+        "Id": "b1de2c73-0000-4000-8000-000000001014",
+        "Name": "Aisha Rahman",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001021"
+      }
+    },
+    {
+      "ref": "passenger-james-o-connor-4",
+      "kind": "record",
+      "data": {
+        "Age": 58,
+        "Id": "b1de2c73-0000-4000-8000-000000001015",
+        "Name": "James O'Connor",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001022"
+      }
+    },
+    {
+      "ref": "passenger-priya-nair-4",
+      "kind": "record",
+      "data": {
+        "Age": 31,
+        "Id": "b1de2c73-0000-4000-8000-000000001016",
+        "Name": "Priya Nair",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001023"
+      }
+    },
+    {
+      "ref": "passenger-placeholder-3",
+      "kind": "record",
+      "data": {
+        "Age": 0,
+        "Id": null,
+        "Name": "placeholder",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001024"
+      }
+    },
+    {
+      "ref": "passenger-lucas-fernandes-4",
+      "kind": "record",
+      "data": {
+        "Age": 9,
+        "Id": "b1de2c73-0000-4000-8000-000000001017",
+        "Name": "Lucas Fernandes",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001025"
+      }
+    },
+    {
+      "ref": "passenger-elena-petrova-4",
+      "kind": "record",
+      "data": {
+        "Age": 66,
+        "Id": "b1de2c73-0000-4000-8000-000000001018",
+        "Name": "Elena Petrova",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001026"
+      }
+    },
+    {
+      "ref": "passenger-kenji-watanabe-4",
+      "kind": "record",
+      "data": {
+        "Age": 47,
+        "Id": "b1de2c73-0000-4000-8000-000000001019",
+        "Name": "Kenji Watanabe",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001027"
+      }
+    },
+    {
+      "ref": "passenger-sofia-rossi-4",
+      "kind": "record",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001020",
+        "Name": "Sofia Rossi",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001028"
+      }
+    },
+    {
+      "ref": "passenger-omar-haddad-4",
+      "kind": "record",
+      "data": {
+        "Age": 36,
+        "Id": "b1de2c73-0000-4000-8000-000000001021",
+        "Name": "Omar Haddad",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001029"
+      }
+    },
+    {
+      "ref": "passenger-hannah-schmidt-4",
+      "kind": "record",
+      "data": {
+        "Age": 52,
+        "Id": "b1de2c73-0000-4000-8000-000000001022",
+        "Name": "Hannah Schmidt",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001030"
+      }
+    },
+    {
+      "ref": "passenger-tom-s-alvarez-4",
+      "kind": "record",
+      "data": {
+        "Age": 0,
+        "Id": "b1de2c73-0000-4000-8000-000000001023",
+        "Name": "Tomás Alvarez",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001031"
+      }
+    },
+    {
+      "ref": "passenger-olivia-brennan-4",
+      "kind": "record",
+      "data": {
+        "Age": 23,
+        "Id": "b1de2c73-0000-4000-8000-000000001024",
+        "Name": "Olivia Brennan",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001032"
+      }
+    },
+    {
+      "ref": "passenger-abdullah-karim-4",
+      "kind": "record",
+      "data": {
+        "Age": 95,
+        "Id": "b1de2c73-0000-4000-8000-000000001025",
+        "Name": "Abdullah Karim",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001033"
+      }
+    },
+    {
+      "ref": "passenger-chloe-dubois-4",
+      "kind": "record",
+      "data": {
+        "Age": 19,
+        "Id": "b1de2c73-0000-4000-8000-000000001026",
+        "Name": "Chloe Dubois",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001034"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "passengerdto-case-1",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "passengerdto-case-2",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "text",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001001"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "passengerdto-case-3",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "Name": "Alice Whitfield",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001002"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "passengerdto-case-4",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001003"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "passengerdto-case-5",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001004"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "passengerdto-case-6",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "text",
+        "PassengerType": "Female",
+        "PassportNumber": ""
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "passengerdto-case-7",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "text",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001006"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "passengerdto-case-8",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "Name": "Alice Whitfield",
+        "PassengerType": "Male",
+        "PassportNumber": ""
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "passengerdto-case-9",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "Name": "Alice Whitfield",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001008"
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "passengerdto-case-10",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": "Baby",
+        "PassportNumber": ""
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "passengerdto-case-11",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "text",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001010"
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "passengerdto-case-12",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "Name": "Alice Whitfield",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001011"
+      },
+      "case": "covering-0012"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "passengerdto-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": null,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passengerdto-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "not-a-uuid",
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "passengerdto-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": null,
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passengerdto-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": null
+      },
+      "violates": {
+        "field": "PassportNumber",
+        "rule": "`PassportNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passengerdto-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": null,
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "`PassengerType` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passengerdto-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": "__INVALID__",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "violates a declared constraint on `PassengerType`"
+      }
+    },
+    {
+      "ref": "passengerdto-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Age": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Age",
+        "rule": "`Age` is declared NOT NULL"
+      }
+    }
+  ]
+}

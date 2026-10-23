@@ -1,0 +1,20 @@
+{
+  "id": "getpassengerbyidtests-should-retrive-a-p",
+  "title": "should retrive a passenger by id from grpc service",
+  "source": "repository test",
+  "file": "tests/IntegrationTest/Passenger/Features/GetPassengerByIdTests.cs:39",
+  "steps": [
+    {
+      "n": 1,
+      "does": "await Fixture.SendAsync(command)"
+    },
+    {
+      "n": 2,
+      "does": "var response = await passengerGrpcClient.GetByIdAsync(new GetByIdRequest { Id = command.Id.ToString() })"
+    }
+  ],
+  "expect": [
+    "response?.Should().NotBeNull()",
+    "response?.PassengerDto?.Id.Should().Be(command.Id.ToString())"
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "object": "Passenger",
+  "table": "Passenger",
+  "source": "src/Passenger/Passengers/Models/Passenger.cs:9",
+  "columns": [
+    "Id",
+    "PassportNumber",
+    "Name",
+    "PassengerType",
+    "Age",
+    "Version",
+    "CreatedAt",
+    "CreatedBy",
+    "IsDeleted",
+    "LastModified",
+    "LastModifiedBy"
+  ],
+  "cases": [
+    {
+      "ref": "passenger-case-1",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001000",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "passenger-case-2",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 100,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 100,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Male",
+        "PassportNumber": "",
+        "Version": 100
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "passenger-case-3",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 100,
+        "Id": "b1de2c73-0000-4000-8000-000000001002",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "Name": "",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001002",
+        "Version": 100
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "passenger-case-4",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001003",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001003",
+        "Version": 1
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "passenger-case-5",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 100,
+        "Id": "b1de2c73-0000-4000-8000-000000001004",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Female",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "passenger-case-6",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001005",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "Name": "",
+        "PassengerType": "Baby",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "passenger-case-7",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001006",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001006",
+        "Version": 100
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "passenger-case-8",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 100,
+        "Id": "b1de2c73-0000-4000-8000-000000001007",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001007",
+        "Version": 100
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "passenger-case-9",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 100,
+        "Id": "b1de2c73-0000-4000-8000-000000001008",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": 100
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "passenger-case-10",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001009",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Male",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "passenger-case-11",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:45:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001010",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 100,
+        "Name": "",
+        "PassengerType": "Female",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "passenger-case-12",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001011",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:45:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Baby",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "case": "covering-0012"
+    }
+  ]
+}

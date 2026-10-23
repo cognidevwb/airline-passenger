@@ -1,0 +1,346 @@
+{
+  "shape": "PassengerCreatedDomainEvent",
+  "role": "event",
+  "source": "src/Passenger/Identity/Consumers/RegisteringNewUser/V1/PassengerCreatedDomainEvent.cs:5",
+  "columns": [
+    "Id",
+    "Name",
+    "PassportNumber",
+    "IsDeleted"
+  ],
+  "records": [
+    {
+      "ref": "passenger-maria-gonzalez-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "Name": "Maria Gonzalez",
+        "PassportNumber": "X00001014"
+      }
+    },
+    {
+      "ref": "passenger-wei-zhang-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001013",
+        "IsDeleted": false,
+        "Name": "Wei Zhang",
+        "PassportNumber": "X00001015"
+      }
+    },
+    {
+      "ref": "passenger-aisha-rahman-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001014",
+        "IsDeleted": false,
+        "Name": "Aisha Rahman",
+        "PassportNumber": "X00001016"
+      }
+    },
+    {
+      "ref": "passenger-james-o-connor-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001015",
+        "IsDeleted": false,
+        "Name": "James O'Connor",
+        "PassportNumber": "X00001017"
+      }
+    },
+    {
+      "ref": "passenger-priya-nair-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "Name": "Priya Nair",
+        "PassportNumber": "X00001018"
+      }
+    },
+    {
+      "ref": "passenger-placeholder-2",
+      "kind": "record",
+      "data": {
+        "Id": null,
+        "IsDeleted": false,
+        "Name": "placeholder",
+        "PassportNumber": "X00001019"
+      }
+    },
+    {
+      "ref": "passenger-lucas-fernandes-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "Name": "Lucas Fernandes",
+        "PassportNumber": "X00001020"
+      }
+    },
+    {
+      "ref": "passenger-elena-petrova-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001018",
+        "IsDeleted": false,
+        "Name": "Elena Petrova",
+        "PassportNumber": "X00001021"
+      }
+    },
+    {
+      "ref": "passenger-kenji-watanabe-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001019",
+        "IsDeleted": false,
+        "Name": "Kenji Watanabe",
+        "PassportNumber": "X00001022"
+      }
+    },
+    {
+      "ref": "passenger-sofia-rossi-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "Name": "Sofia Rossi",
+        "PassportNumber": "X00001023"
+      }
+    },
+    {
+      "ref": "passenger-omar-haddad-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001021",
+        "IsDeleted": true,
+        "Name": "Omar Haddad",
+        "PassportNumber": "X00001024"
+      }
+    },
+    {
+      "ref": "passenger-hannah-schmidt-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001022",
+        "IsDeleted": false,
+        "Name": "Hannah Schmidt",
+        "PassportNumber": "X00001025"
+      }
+    },
+    {
+      "ref": "passenger-tom-s-alvarez-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001023",
+        "IsDeleted": false,
+        "Name": "Tomás Alvarez",
+        "PassportNumber": "X00001026"
+      }
+    },
+    {
+      "ref": "passenger-olivia-brennan-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "Name": "Olivia Brennan",
+        "PassportNumber": "X00001027"
+      }
+    },
+    {
+      "ref": "passenger-abdullah-karim-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "Name": "Abdullah Karim",
+        "PassportNumber": "X00001028"
+      }
+    },
+    {
+      "ref": "passenger-chloe-dubois-3",
+      "kind": "record",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001026",
+        "IsDeleted": false,
+        "Name": "Chloe Dubois",
+        "PassportNumber": "X00001029"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "passengercreateddomainevent-case-1",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassportNumber": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-2",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "text",
+        "PassportNumber": "X00001001"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-3",
+      "kind": "case",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield",
+        "PassportNumber": "X00001002"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-4",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassportNumber": "X00001003"
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-5",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassportNumber": "X00001004"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-6",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "text",
+        "PassportNumber": ""
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-7",
+      "kind": "case",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "text",
+        "PassportNumber": "X00001006"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-8",
+      "kind": "case",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield",
+        "PassportNumber": ""
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "passengercreateddomainevent-case-9",
+      "kind": "case",
+      "data": {
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield",
+        "PassportNumber": "X00001008"
+      },
+      "case": "covering-0009"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "passengercreateddomainevent-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Id": null,
+        "IsDeleted": true,
+        "Name": "",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passengercreateddomainevent-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Id": "not-a-uuid",
+        "IsDeleted": true,
+        "Name": "",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "passengercreateddomainevent-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": null,
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passengercreateddomainevent-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassportNumber": null
+      },
+      "violates": {
+        "field": "PassportNumber",
+        "rule": "`PassportNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passengercreateddomainevent-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": null,
+        "Name": "",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    }
+  ]
+}

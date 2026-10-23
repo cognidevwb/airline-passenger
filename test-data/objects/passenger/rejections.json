@@ -1,0 +1,230 @@
+{
+  "object": "Passenger",
+  "table": "Passenger",
+  "source": "src/Passenger/Passengers/Models/Passenger.cs:9",
+  "columns": [
+    "Id",
+    "PassportNumber",
+    "Name",
+    "PassengerType",
+    "Age",
+    "Version",
+    "CreatedAt",
+    "CreatedBy",
+    "IsDeleted",
+    "LastModified",
+    "LastModifiedBy"
+  ],
+  "rejections": [
+    {
+      "ref": "passenger-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001027",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": null,
+        "Version": 1
+      },
+      "violates": {
+        "field": "PassportNumber",
+        "rule": "`PassportNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passenger-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001028",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": "alder-birch",
+        "Version": 1
+      },
+      "violates": {
+        "field": "PassportNumber",
+        "rule": "11 characters, and `PassportNumber` declares 10"
+      }
+    },
+    {
+      "ref": "passenger-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001029",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": null,
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passenger-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001030",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "alder-birch-cedar-dogwood-elm-fir-gum-hazel-ilex-ju",
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "51 characters, and `Name` declares 50"
+      }
+    },
+    {
+      "ref": "passenger-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001031",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": null,
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "`PassengerType` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passenger-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001032",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "__INVALID__",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "violates a declared constraint on `PassengerType`"
+      }
+    },
+    {
+      "ref": "passenger-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001033",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": null
+      },
+      "violates": {
+        "field": "Version",
+        "rule": "`Version` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passenger-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "not-a-date",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001034",
+        "IsDeleted": true,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "CreatedAt",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    },
+    {
+      "ref": "passenger-rejection-9",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001035",
+        "IsDeleted": null,
+        "LastModified": "2026-03-01T06:00:00Z",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "passenger-rejection-10",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "CreatedAt": "2026-03-01T06:00:00Z",
+        "CreatedBy": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001036",
+        "IsDeleted": true,
+        "LastModified": "not-a-date",
+        "LastModifiedBy": 1,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": "",
+        "Version": 1
+      },
+      "violates": {
+        "field": "LastModified",
+        "rule": "not a value `DateTime?` accepts"
+      }
+    }
+  ]
+}

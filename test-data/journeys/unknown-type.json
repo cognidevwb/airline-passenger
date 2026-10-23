@@ -1,0 +1,34 @@
+{
+  "id": "unknown-type",
+  "title": "Unknown type",
+  "source": "staged scenario",
+  "why": "A data-quality edge: the passenger type is Unknown even though an age is known. It shows whether the code accepts the combination, flags it, or wrongly infers a type from the age.",
+  "setup": [
+    {
+      "ref": "passenger-unknown",
+      "table": "Passenger",
+      "values": {
+        "Age": 34,
+        "CreatedAt": "2026-10-01T09:10:00Z",
+        "CreatedBy": 1,
+        "Id": "7b1f0c52-3a4e-4d8a-9c11-0a1b2c3d4e03",
+        "IsDeleted": false,
+        "LastModified": "2026-10-01T09:10:00Z",
+        "LastModifiedBy": 1,
+        "Name": "Sam Rivera",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X98765432",
+        "Version": 1
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Fetch the passenger by Id and list passengers filtered to type Unknown."
+    }
+  ],
+  "expect": [
+    "The passenger is returned with PassengerType Unknown and Age 34 unchanged. The type is not auto-derived from the age, and the record appears in the Unknown filter and not in the Male, Female or Baby filters."
+  ]
+}

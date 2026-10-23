@@ -1,0 +1,393 @@
+{
+  "shape": "CompleteRegisterPassenger",
+  "role": "command",
+  "source": "src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs:21",
+  "columns": [
+    "PassportNumber",
+    "PassengerType",
+    "Age",
+    "Id"
+  ],
+  "records": [
+    {
+      "ref": "passenger-x00001018",
+      "kind": "record",
+      "data": {
+        "Age": 34,
+        "Id": null,
+        "PassengerType": "Female",
+        "PassportNumber": "X00001018"
+      }
+    },
+    {
+      "ref": "passenger-x00001019",
+      "kind": "record",
+      "data": {
+        "Age": 41,
+        "Id": null,
+        "PassengerType": "Male",
+        "PassportNumber": "X00001019"
+      }
+    },
+    {
+      "ref": "passenger-x00001020",
+      "kind": "record",
+      "data": {
+        "Age": 27,
+        "Id": null,
+        "PassengerType": "Female",
+        "PassportNumber": "X00001020"
+      }
+    },
+    {
+      "ref": "passenger-x00001021",
+      "kind": "record",
+      "data": {
+        "Age": 58,
+        "Id": null,
+        "PassengerType": "Male",
+        "PassportNumber": "X00001021"
+      }
+    },
+    {
+      "ref": "passenger-x00001022",
+      "kind": "record",
+      "data": {
+        "Age": 31,
+        "Id": null,
+        "PassengerType": "Female",
+        "PassportNumber": "X00001022"
+      }
+    },
+    {
+      "ref": "passenger-x00001023",
+      "kind": "record",
+      "data": {
+        "Age": 0,
+        "Id": null,
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001023"
+      }
+    },
+    {
+      "ref": "passenger-x00001024",
+      "kind": "record",
+      "data": {
+        "Age": 9,
+        "Id": null,
+        "PassengerType": "Male",
+        "PassportNumber": "X00001024"
+      }
+    },
+    {
+      "ref": "passenger-x00001025",
+      "kind": "record",
+      "data": {
+        "Age": 66,
+        "Id": null,
+        "PassengerType": "Female",
+        "PassportNumber": "X00001025"
+      }
+    },
+    {
+      "ref": "passenger-x00001026",
+      "kind": "record",
+      "data": {
+        "Age": 47,
+        "Id": null,
+        "PassengerType": "Male",
+        "PassportNumber": "X00001026"
+      }
+    },
+    {
+      "ref": "passenger-x00001027",
+      "kind": "record",
+      "data": {
+        "Age": 1,
+        "Id": null,
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001027"
+      }
+    },
+    {
+      "ref": "passenger-x00001028",
+      "kind": "record",
+      "data": {
+        "Age": 36,
+        "Id": null,
+        "PassengerType": "Male",
+        "PassportNumber": "X00001028"
+      }
+    },
+    {
+      "ref": "passenger-x00001029",
+      "kind": "record",
+      "data": {
+        "Age": 52,
+        "Id": null,
+        "PassengerType": "Female",
+        "PassportNumber": "X00001029"
+      }
+    },
+    {
+      "ref": "passenger-x00001030",
+      "kind": "record",
+      "data": {
+        "Age": 0,
+        "Id": null,
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001030"
+      }
+    },
+    {
+      "ref": "passenger-x00001031",
+      "kind": "record",
+      "data": {
+        "Age": 23,
+        "Id": null,
+        "PassengerType": "Female",
+        "PassportNumber": "X00001031"
+      }
+    },
+    {
+      "ref": "passenger-x00001032",
+      "kind": "record",
+      "data": {
+        "Age": 95,
+        "Id": null,
+        "PassengerType": "Male",
+        "PassportNumber": "X00001032"
+      }
+    },
+    {
+      "ref": "passenger-x00001033",
+      "kind": "record",
+      "data": {
+        "Age": 19,
+        "Id": null,
+        "PassengerType": "Female",
+        "PassportNumber": "X00001033"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "completeregisterpassenger-case-1",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001029",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "completeregisterpassenger-case-2",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Male",
+        "PassportNumber": ""
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "completeregisterpassenger-case-3",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Female",
+        "PassportNumber": ""
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "completeregisterpassenger-case-4",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Baby",
+        "PassportNumber": ""
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "completeregisterpassenger-case-5",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001004"
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "completeregisterpassenger-case-6",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001005"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "completeregisterpassenger-case-7",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001006"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "completeregisterpassenger-case-8",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001007"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "completeregisterpassenger-case-9",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001008"
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "completeregisterpassenger-case-10",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001009"
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "completeregisterpassenger-case-11",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001010"
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "completeregisterpassenger-case-12",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001011"
+      },
+      "case": "covering-0012"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "completeregisterpassenger-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Unknown",
+        "PassportNumber": null
+      },
+      "violates": {
+        "field": "PassportNumber",
+        "rule": "`PassportNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassenger-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": null,
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "`PassengerType` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassenger-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "__INVALID__",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "violates a declared constraint on `PassengerType`"
+      }
+    },
+    {
+      "ref": "completeregisterpassenger-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Age": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Age",
+        "rule": "`Age` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassenger-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": null,
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassenger-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "not-a-uuid",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    }
+  ]
+}

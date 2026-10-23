@@ -1,0 +1,15 @@
+{
+  "shape": "GET /",
+  "role": "shape",
+  "source": "src/Passenger/Extensions/Infrastructure/InfrastructureExtensions.cs:88",
+  "columns": [],
+  "records": [
+    {
+      "ref": "passenger-1",
+      "kind": "record",
+      "data": {}
+    }
+  ],
+  "cases": [],
+  "rejections": []
+}

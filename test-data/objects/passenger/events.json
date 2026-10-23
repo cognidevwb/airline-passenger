@@ -1,0 +1,105 @@
+{
+  "object": "Passenger",
+  "events": [
+    {
+      "event": "PassengerCreatedDomainEvent",
+      "payload": [
+        {
+          "ref": "passenger-maria-gonzalez-3",
+          "kind": "record",
+          "data": {
+            "Id": "b1de2c73-0000-4000-8000-000000001012",
+            "IsDeleted": false,
+            "Name": "Maria Gonzalez",
+            "PassportNumber": "X00001014"
+          }
+        },
+        {
+          "ref": "passenger-wei-zhang-3",
+          "kind": "record",
+          "data": {
+            "Id": "b1de2c73-0000-4000-8000-000000001013",
+            "IsDeleted": false,
+            "Name": "Wei Zhang",
+            "PassportNumber": "X00001015"
+          }
+        },
+        {
+          "ref": "passenger-aisha-rahman-3",
+          "kind": "record",
+          "data": {
+            "Id": "b1de2c73-0000-4000-8000-000000001014",
+            "IsDeleted": false,
+            "Name": "Aisha Rahman",
+            "PassportNumber": "X00001016"
+          }
+        },
+        {
+          "ref": "passenger-james-o-connor-3",
+          "kind": "record",
+          "data": {
+            "Id": "b1de2c73-0000-4000-8000-000000001015",
+            "IsDeleted": false,
+            "Name": "James O'Connor",
+            "PassportNumber": "X00001017"
+          }
+        }
+      ],
+      "consumedBy": []
+    },
+    {
+      "event": "PassengerRegistrationCompletedDomainEvent",
+      "payload": [
+        {
+          "ref": "passenger-maria-gonzalez-6",
+          "kind": "record",
+          "data": {
+            "Age": 34,
+            "Id": "b1de2c73-0000-4000-8000-000000001012",
+            "IsDeleted": false,
+            "Name": "Maria Gonzalez",
+            "PassengerType": "Female",
+            "PassportNumber": "X00001020"
+          }
+        },
+        {
+          "ref": "passenger-wei-zhang-6",
+          "kind": "record",
+          "data": {
+            "Age": 41,
+            "Id": "b1de2c73-0000-4000-8000-000000001013",
+            "IsDeleted": false,
+            "Name": "Wei Zhang",
+            "PassengerType": "Male",
+            "PassportNumber": "X00001021"
+          }
+        },
+        {
+          "ref": "passenger-aisha-rahman-6",
+          "kind": "record",
+          "data": {
+            "Age": 27,
+            "Id": "b1de2c73-0000-4000-8000-000000001014",
+            "IsDeleted": false,
+            "Name": "Aisha Rahman",
+            "PassengerType": "Female",
+            "PassportNumber": "X00001022"
+          }
+        },
+        {
+          "ref": "passenger-james-o-connor-6",
+          "kind": "record",
+          "data": {
+            "Age": 58,
+            "Id": "b1de2c73-0000-4000-8000-000000001015",
+            "IsDeleted": false,
+            "Name": "James O'Connor",
+            "PassengerType": "Male",
+            "PassportNumber": "X00001023"
+          }
+        }
+      ],
+      "consumedBy": []
+    }
+  ]
+}

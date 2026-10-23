@@ -1,0 +1,495 @@
+{
+  "shape": "CompleteRegisterPassengerMongoCommand",
+  "role": "command",
+  "source": "src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassengerMongo.cs:14",
+  "columns": [
+    "Id",
+    "PassportNumber",
+    "Name",
+    "PassengerType",
+    "Age",
+    "IsDeleted"
+  ],
+  "records": [
+    {
+      "ref": "passenger-maria-gonzalez-2",
+      "kind": "record",
+      "data": {
+        "Age": 34,
+        "Id": "b1de2c73-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "Name": "Maria Gonzalez",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001020"
+      }
+    },
+    {
+      "ref": "passenger-wei-zhang-2",
+      "kind": "record",
+      "data": {
+        "Age": 41,
+        "Id": "b1de2c73-0000-4000-8000-000000001013",
+        "IsDeleted": false,
+        "Name": "Wei Zhang",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001021"
+      }
+    },
+    {
+      "ref": "passenger-aisha-rahman-2",
+      "kind": "record",
+      "data": {
+        "Age": 27,
+        "Id": "b1de2c73-0000-4000-8000-000000001014",
+        "IsDeleted": false,
+        "Name": "Aisha Rahman",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001022"
+      }
+    },
+    {
+      "ref": "passenger-james-o-connor-2",
+      "kind": "record",
+      "data": {
+        "Age": 58,
+        "Id": "b1de2c73-0000-4000-8000-000000001015",
+        "IsDeleted": false,
+        "Name": "James O'Connor",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001023"
+      }
+    },
+    {
+      "ref": "passenger-priya-nair-2",
+      "kind": "record",
+      "data": {
+        "Age": 31,
+        "Id": "b1de2c73-0000-4000-8000-000000001016",
+        "IsDeleted": false,
+        "Name": "Priya Nair",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001024"
+      }
+    },
+    {
+      "ref": "passenger-placeholder",
+      "kind": "record",
+      "data": {
+        "Age": 0,
+        "Id": null,
+        "IsDeleted": false,
+        "Name": "placeholder",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001025"
+      }
+    },
+    {
+      "ref": "passenger-lucas-fernandes-2",
+      "kind": "record",
+      "data": {
+        "Age": 9,
+        "Id": "b1de2c73-0000-4000-8000-000000001017",
+        "IsDeleted": false,
+        "Name": "Lucas Fernandes",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001026"
+      }
+    },
+    {
+      "ref": "passenger-elena-petrova-2",
+      "kind": "record",
+      "data": {
+        "Age": 66,
+        "Id": "b1de2c73-0000-4000-8000-000000001018",
+        "IsDeleted": false,
+        "Name": "Elena Petrova",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001027"
+      }
+    },
+    {
+      "ref": "passenger-kenji-watanabe-2",
+      "kind": "record",
+      "data": {
+        "Age": 47,
+        "Id": "b1de2c73-0000-4000-8000-000000001019",
+        "IsDeleted": false,
+        "Name": "Kenji Watanabe",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001028"
+      }
+    },
+    {
+      "ref": "passenger-sofia-rossi-2",
+      "kind": "record",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001020",
+        "IsDeleted": false,
+        "Name": "Sofia Rossi",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001029"
+      }
+    },
+    {
+      "ref": "passenger-omar-haddad-2",
+      "kind": "record",
+      "data": {
+        "Age": 36,
+        "Id": "b1de2c73-0000-4000-8000-000000001021",
+        "IsDeleted": true,
+        "Name": "Omar Haddad",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001030"
+      }
+    },
+    {
+      "ref": "passenger-hannah-schmidt-2",
+      "kind": "record",
+      "data": {
+        "Age": 52,
+        "Id": "b1de2c73-0000-4000-8000-000000001022",
+        "IsDeleted": false,
+        "Name": "Hannah Schmidt",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001031"
+      }
+    },
+    {
+      "ref": "passenger-tom-s-alvarez-2",
+      "kind": "record",
+      "data": {
+        "Age": 0,
+        "Id": "b1de2c73-0000-4000-8000-000000001023",
+        "IsDeleted": false,
+        "Name": "Tomás Alvarez",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001032"
+      }
+    },
+    {
+      "ref": "passenger-olivia-brennan-2",
+      "kind": "record",
+      "data": {
+        "Age": 23,
+        "Id": "b1de2c73-0000-4000-8000-000000001024",
+        "IsDeleted": false,
+        "Name": "Olivia Brennan",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001033"
+      }
+    },
+    {
+      "ref": "passenger-abdullah-karim-2",
+      "kind": "record",
+      "data": {
+        "Age": 95,
+        "Id": "b1de2c73-0000-4000-8000-000000001025",
+        "IsDeleted": false,
+        "Name": "Abdullah Karim",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001034"
+      }
+    },
+    {
+      "ref": "passenger-chloe-dubois-2",
+      "kind": "record",
+      "data": {
+        "Age": 19,
+        "Id": "b1de2c73-0000-4000-8000-000000001026",
+        "IsDeleted": false,
+        "Name": "Chloe Dubois",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001035"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "ref": "completeregisterpassengermongocommand-case-1",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "case": "covering-0001"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-2",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "text",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001001"
+      },
+      "case": "covering-0002"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-3",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001002"
+      },
+      "case": "covering-0003"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-4",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "text",
+        "PassengerType": "Female",
+        "PassportNumber": ""
+      },
+      "case": "covering-0004"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-5",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Male",
+        "PassportNumber": ""
+      },
+      "case": "covering-0005"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-6",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001005"
+      },
+      "case": "covering-0006"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-7",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001006"
+      },
+      "case": "covering-0007"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-8",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001007"
+      },
+      "case": "covering-0008"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-9",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "text",
+        "PassengerType": "Unknown",
+        "PassportNumber": "X00001008"
+      },
+      "case": "covering-0009"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-10",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Baby",
+        "PassportNumber": ""
+      },
+      "case": "covering-0010"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-11",
+      "kind": "case",
+      "data": {
+        "Age": 18,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "text",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001010"
+      },
+      "case": "covering-0011"
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-case-12",
+      "kind": "case",
+      "data": {
+        "Age": 1,
+        "Id": "b1de2c73-0000-4000-8000-000000001001",
+        "IsDeleted": true,
+        "Name": "Alice Whitfield",
+        "PassengerType": "Baby",
+        "PassportNumber": "X00001011"
+      },
+      "case": "covering-0012"
+    }
+  ],
+  "rejections": [
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-1",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": null,
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "`Id` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-2",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "not-a-uuid",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Id",
+        "rule": "violates a declared constraint on `Id`"
+      }
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-3",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": null
+      },
+      "violates": {
+        "field": "PassportNumber",
+        "rule": "`PassportNumber` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-4",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": null,
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Name",
+        "rule": "`Name` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-5",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": null,
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "`PassengerType` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-6",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "__INVALID__",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "PassengerType",
+        "rule": "violates a declared constraint on `PassengerType`"
+      }
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-7",
+      "kind": "rejection",
+      "data": {
+        "Age": null,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": true,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "Age",
+        "rule": "`Age` is declared NOT NULL"
+      }
+    },
+    {
+      "ref": "completeregisterpassengermongocommand-rejection-8",
+      "kind": "rejection",
+      "data": {
+        "Age": 1,
+        "Id": "00000000-0000-4000-8000-000000000000",
+        "IsDeleted": null,
+        "Name": "",
+        "PassengerType": "Unknown",
+        "PassportNumber": ""
+      },
+      "violates": {
+        "field": "IsDeleted",
+        "rule": "`IsDeleted` is declared NOT NULL"
+      }
+    }
+  ]
+}

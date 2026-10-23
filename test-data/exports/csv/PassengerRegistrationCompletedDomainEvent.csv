@@ -1,0 +1,17 @@
+Id,Name,PassportNumber,PassengerType,Age,IsDeleted
+,Maria Gonzalez,X00001020,Female,34,0
+,Wei Zhang,X00001021,Male,41,0
+,Aisha Rahman,X00001022,Female,27,0
+,James O'Connor,X00001023,Male,58,0
+,Priya Nair,X00001024,Female,31,0
+,placeholder,X00001025,Unknown,0,0
+,Lucas Fernandes,X00001026,Male,9,0
+,Elena Petrova,X00001027,Female,66,0
+,Kenji Watanabe,X00001028,Male,47,0
+,Sofia Rossi,X00001029,Baby,1,0
+,Omar Haddad,X00001030,Male,36,1
+,Hannah Schmidt,X00001031,Female,52,0
+,Tomás Alvarez,X00001032,Baby,0,0
+,Olivia Brennan,X00001033,Female,23,0
+,Abdullah Karim,X00001034,Male,95,0
+,Chloe Dubois,X00001035,Female,19,0

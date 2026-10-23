@@ -1,0 +1,38 @@
+{
+  "repository": "airline-passenger",
+  "domain": "Airline passenger registration and management",
+  "report": {
+    "rows": 279,
+    "entities": 9,
+    "coverage": "pairwise"
+  },
+  "reconciled": {
+    "rows": 279,
+    "matches_report": true
+  },
+  "objects": [
+    {
+      "object": "Passenger",
+      "table": "Passenger",
+      "records": 15,
+      "cases": 12,
+      "rejections": 10,
+      "calls": 2,
+      "events": 2,
+      "shapes": [
+        "CompleteRegisterPassenger",
+        "CompleteRegisterPassengerMongoCommand",
+        "CompleteRegisterPassengerRequestDto",
+        "GET /",
+        "PassengerCreatedDomainEvent",
+        "PassengerDto",
+        "PassengerReadModel",
+        "PassengerRegistrationCompletedDomainEvent"
+      ]
+    }
+  ],
+  "calls": 2,
+  "journeys": 6,
+  "failures": 5,
+  "personal": "values that cannot belong to a person: example.com, reserved phone ranges, passport and card numbers that cannot be issued"
+}
