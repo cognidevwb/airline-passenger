@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-register-an-adult-female-",
+  "title": "Register an adult female passenger",
+  "source": "staged scenario",
+  "why": "Confirms the Female type is stored correctly on the happy path.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'Maria Garcia', PassportNumber 'X9876543', PassengerType Female, Age 42."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with type Female and age 42."
+  ]
+}

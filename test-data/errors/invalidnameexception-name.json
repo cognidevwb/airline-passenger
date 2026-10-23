@@ -1,0 +1,15 @@
+{
+  "id": "invalidnameexception-name",
+  "title": "Name that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidNameException",
+  "base": "BadRequestException",
+  "thrownAt": "src/Passenger/Passengers/ValueObjects/Name.cs:18",
+  "condition": "if (string.IsNullOrWhiteSpace(value))",
+  "field": "Name",
+  "expect": {
+    "status": 400,
+    "error": "InvalidNameException",
+    "note": null
+  }
+}

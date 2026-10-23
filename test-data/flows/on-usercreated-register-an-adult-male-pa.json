@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-register-an-adult-male-pa",
+  "title": "Register an adult male passenger",
+  "source": "staged scenario",
+  "why": "Confirms the baseline registration stores all supplied fields for a Male adult.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'John Smith', PassportNumber 'P1234567', PassengerType Male, Age 35."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with the supplied name, passport, type Male and age 35."
+  ]
+}

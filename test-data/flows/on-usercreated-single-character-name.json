@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-single-character-name",
+  "title": "Single-character name",
+  "source": "staged scenario",
+  "why": "Checks the shortest non-empty name is accepted.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'J', PassportNumber 'J1000001', Male, Age 30."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with Name 'J'."
+  ]
+}

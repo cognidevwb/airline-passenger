@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-register-a-baby-passenger",
+  "title": "Register a baby passenger",
+  "source": "staged scenario",
+  "why": "Confirms the Baby type with a small age is accepted.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'Lily Chen', PassportNumber 'C5544332', PassengerType Baby, Age 1."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with type Baby and age 1."
+  ]
+}

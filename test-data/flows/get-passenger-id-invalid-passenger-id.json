@@ -1,0 +1,16 @@
+{
+  "id": "get-passenger-id-invalid-passenger-id",
+  "title": "Invalid passenger id",
+  "source": "staged scenario",
+  "why": "Checks GetPassengerById itself guards against an empty Guid",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "Call GetPassengerById with Id 00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "expect": [
+    "Fails with an invalid-id error before any database access"
+  ]
+}

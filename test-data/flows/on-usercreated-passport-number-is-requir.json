@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-passport-number-is-requir",
+  "title": "Passport number is required",
+  "source": "staged scenario",
+  "why": "Verifies a missing passport blocks registration.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'No Passport', PassportNumber empty, Male, Age 30."
+    }
+  ],
+  "expect": [
+    "The request is rejected with a validation error on PassportNumber and no Passenger is saved."
+  ]
+}

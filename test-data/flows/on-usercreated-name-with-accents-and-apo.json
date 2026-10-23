@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-name-with-accents-and-apo",
+  "title": "Name with accents and apostrophe",
+  "source": "staged scenario",
+  "why": "Checks that non-ASCII letters, apostrophes and hyphens are stored without corruption.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name \"Zoë O'Brien-Müller\", PassportNumber 'Z1122334', Female, Age 31."
+    }
+  ],
+  "expect": [
+    "A Passenger is created and the name reads back exactly as \"Zoë O'Brien-Müller\"."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "operation": "gRPC PassengerGrpcService/GetById",
+  "kind": "grpc",
+  "handler": "src/Passenger/GrpcServer/Protos/passenger.proto:7",
+  "request": "GetByIdRequest",
+  "response": "GetPassengerByIdResult",
+  "valid": [],
+  "invalid": [],
+  "requestFields": [
+    "Id"
+  ]
+}

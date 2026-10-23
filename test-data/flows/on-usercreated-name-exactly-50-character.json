@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-name-exactly-50-character",
+  "title": "Name exactly 50 characters",
+  "source": "staged scenario",
+  "why": "Checks the upper boundary of the name length is inclusive.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger whose Name is exactly 50 letters ('B' repeated 50 times), PassportNumber 'N2000001', Male, Age 30."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with the full 50-character name."
+  ]
+}

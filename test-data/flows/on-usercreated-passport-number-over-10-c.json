@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-passport-number-over-10-c",
+  "title": "Passport number over 10 characters rejected",
+  "source": "staged scenario",
+  "why": "Verifies the 10-character maximum is enforced.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with PassportNumber 'AB123456789' (11 characters), Name 'Too Long', Male, Age 30."
+    }
+  ],
+  "expect": [
+    "The request is rejected with a length validation error on PassportNumber and nothing is saved."
+  ]
+}

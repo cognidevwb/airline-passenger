@@ -1,0 +1,80 @@
+{
+  "table": "Passenger",
+  "accesses": [
+    {
+      "operation": "_passengerDbContext.Passengers.AnyAsync",
+      "mode": "read",
+      "in": "src/Passenger/Identity/Consumers/RegisteringNewUser/V1/RegisterNewUser.cs:40 Handle",
+      "given": [
+        "b1de2c73-0000-4000-8000-000000001012",
+        "b1de2c73-0000-4000-8000-000000001013",
+        "b1de2c73-0000-4000-8000-000000001014",
+        "b1de2c73-0000-4000-8000-000000001015",
+        "b1de2c73-0000-4000-8000-000000001016"
+      ],
+      "lookup": {
+        "Id": "b1de2c73-0000-4000-8000-000000001012"
+      },
+      "expect": {
+        "Age": 34,
+        "CreatedAt": "2025-03-04T09:12:41Z",
+        "CreatedBy": 101,
+        "Id": "b1de2c73-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "LastModified": "2025-06-18T14:05:22Z",
+        "LastModifiedBy": 104,
+        "Name": "Amelia Hartwell",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001012",
+        "Version": 3
+      }
+    },
+    {
+      "operation": "_passengerDbContext.Passengers.SingleOrDefaultAsync",
+      "mode": "read",
+      "in": "src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs:116 Handle",
+      "given": [
+        "b1de2c73-0000-4000-8000-000000001012",
+        "b1de2c73-0000-4000-8000-000000001013",
+        "b1de2c73-0000-4000-8000-000000001014",
+        "b1de2c73-0000-4000-8000-000000001015",
+        "b1de2c73-0000-4000-8000-000000001016"
+      ],
+      "lookup": {
+        "Id": "b1de2c73-0000-4000-8000-000000001012"
+      },
+      "expect": {
+        "Age": 34,
+        "CreatedAt": "2025-03-04T09:12:41Z",
+        "CreatedBy": 101,
+        "Id": "b1de2c73-0000-4000-8000-000000001012",
+        "IsDeleted": false,
+        "LastModified": "2025-06-18T14:05:22Z",
+        "LastModifiedBy": 104,
+        "Name": "Amelia Hartwell",
+        "PassengerType": "Female",
+        "PassportNumber": "X00001012",
+        "Version": 3
+      }
+    },
+    {
+      "operation": "_passengerDbContext.Passengers.Update",
+      "mode": "write",
+      "in": "src/Passenger/Passengers/Features/CompletingRegisterPassenger/V1/CompleteRegisterPassenger.cs:134 Handle",
+      "insert": {
+        "Age": 68,
+        "CreatedAt": "2025-03-04T10:27:03Z",
+        "CreatedBy": 102,
+        "Id": "b1de2c73-0000-4000-8000-000000001013",
+        "IsDeleted": false,
+        "LastModified": null,
+        "LastModifiedBy": null,
+        "Name": "Rajesh Kumar",
+        "PassengerType": "Male",
+        "PassportNumber": "X00001013",
+        "Version": 1
+      },
+      "expect": "the row is stored and reads back equal"
+    }
+  ]
+}

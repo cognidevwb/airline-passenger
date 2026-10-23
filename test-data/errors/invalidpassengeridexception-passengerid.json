@@ -1,0 +1,15 @@
+{
+  "id": "invalidpassengeridexception-passengerid",
+  "title": "PassengerId that the code refuses",
+  "kind": "invalid value",
+  "exception": "InvalidPassengerIdException",
+  "base": "DomainException",
+  "thrownAt": "src/Passenger/Passengers/ValueObjects/PassengerId.cs:19",
+  "condition": "if (value == Guid.Empty)",
+  "field": "PassengerId",
+  "expect": {
+    "status": 500,
+    "error": "InvalidPassengerIdException",
+    "note": "DomainException is not one of the exception types the problem-details handler maps, so the API answers 500"
+  }
+}

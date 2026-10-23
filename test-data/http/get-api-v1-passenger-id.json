@@ -1,0 +1,34 @@
+{
+  "operation": "GET api/v1/passenger/{{id}}",
+  "kind": "http",
+  "handler": "src/Passenger/Passengers/Features/GettingPassengerById/V1/GetPassengerById.cs:30",
+  "request": null,
+  "response": "GetPassengerByIdResponseDto",
+  "valid": [
+    {
+      "ref": "passenger-amelia-hartwell",
+      "params": {
+        "id": "b1de2c73-0000-4000-8000-000000001012"
+      }
+    },
+    {
+      "ref": "passenger-rajesh-kumar",
+      "params": {
+        "id": "b1de2c73-0000-4000-8000-000000001013"
+      }
+    },
+    {
+      "ref": "passenger-oliver-pennington",
+      "params": {
+        "id": "b1de2c73-0000-4000-8000-000000001014"
+      }
+    },
+    {
+      "ref": "passenger-sofia-marchetti",
+      "params": {
+        "id": "b1de2c73-0000-4000-8000-000000001015"
+      }
+    }
+  ],
+  "invalid": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-new-passenger-gets-identi",
+  "title": "New passenger gets identity and audit stamps",
+  "source": "staged scenario",
+  "why": "Shows that the system, not the caller, sets Id, timestamps, version and the deleted flag.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a valid passenger (Name 'Sam Lee', PassportNumber 'S1000001', Male, Age 30) without supplying Id, CreatedAt, Version or IsDeleted."
+    }
+  ],
+  "expect": [
+    "The saved Passenger has a generated uuid Id, CreatedAt set to the current time, Version 0 and IsDeleted false."
+  ]
+}

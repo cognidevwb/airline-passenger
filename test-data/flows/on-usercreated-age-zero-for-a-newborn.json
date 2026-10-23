@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-age-zero-for-a-newborn",
+  "title": "Age zero for a newborn",
+  "source": "staged scenario",
+  "why": "Checks zero is a valid age and the lower boundary is inclusive.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'Newborn Baby', PassportNumber 'B0000001', PassengerType Baby, Age 0."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with type Baby and age 0."
+  ]
+}

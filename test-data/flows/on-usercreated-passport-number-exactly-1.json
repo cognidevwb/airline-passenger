@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-passport-number-exactly-1",
+  "title": "Passport number exactly 10 characters",
+  "source": "staged scenario",
+  "why": "Checks the upper boundary of the passport length is inclusive.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with PassportNumber 'AB12345678' (10 characters), Name 'Edge Passport', Female, Age 30."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with the full 10-character passport."
+  ]
+}

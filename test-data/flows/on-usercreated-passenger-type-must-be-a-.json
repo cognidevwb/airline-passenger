@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-passenger-type-must-be-a-",
+  "title": "Passenger type must be a known value",
+  "source": "staged scenario",
+  "why": "Verifies out-of-range enum values are refused.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'Bad Type', PassportNumber 'T1000001', PassengerType 9, Age 30."
+    }
+  ],
+  "expect": [
+    "The request is rejected with a validation error on PassengerType and nothing is saved."
+  ]
+}

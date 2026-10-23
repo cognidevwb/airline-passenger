@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-register-a-passenger-with",
+  "title": "Register a passenger with unknown type",
+  "source": "staged scenario",
+  "why": "Confirms Unknown is a valid enum value and not rejected.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'Alex Kim', PassportNumber 'K7788991', PassengerType Unknown, Age 28."
+    }
+  ],
+  "expect": [
+    "A Passenger is created with type Unknown."
+  ]
+}

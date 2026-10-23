@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-name-over-50-characters-r",
+  "title": "Name over 50 characters rejected",
+  "source": "staged scenario",
+  "why": "Verifies the 50-character maximum on Name.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger whose Name is 51 letters ('A' repeated 51 times), PassportNumber 'N1000002', Male, Age 30."
+    }
+  ],
+  "expect": [
+    "The request is rejected with a length validation error on Name and nothing is saved."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "on-usercreated-duplicate-passport-number",
+  "title": "Duplicate passport number rejected",
+  "source": "staged scenario",
+  "why": "Verifies passport numbers are unique across passengers.",
+  "setup": [
+    {
+      "ref": "passenger-1",
+      "table": "Passenger",
+      "values": {
+        "Age": 35,
+        "IsDeleted": false,
+        "Name": "John Smith",
+        "PassengerType": "Male",
+        "PassportNumber": "X90000000",
+        "Version": 0
+      }
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a different person, Name 'Jane Doe', with PassportNumber 'P1234567', Female, Age 29."
+    }
+  ],
+  "expect": [
+    "The request is rejected as a duplicate passport number; only the original Passenger remains."
+  ]
+}

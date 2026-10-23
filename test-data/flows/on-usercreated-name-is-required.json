@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-name-is-required",
+  "title": "Name is required",
+  "source": "staged scenario",
+  "why": "Verifies empty or whitespace-only names are refused.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name '   ' (whitespace only), PassportNumber 'N1000001', Male, Age 30."
+    }
+  ],
+  "expect": [
+    "The request is rejected with a validation error on Name and nothing is saved."
+  ]
+}

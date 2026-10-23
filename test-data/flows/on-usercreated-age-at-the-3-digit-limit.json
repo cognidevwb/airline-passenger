@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-age-at-the-3-digit-limit",
+  "title": "Age at the 3-digit limit",
+  "source": "staged scenario",
+  "why": "Checks the 3-digit maximum: 999 is accepted, 1000 is not.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'Old Timer', PassportNumber 'O9990001', Male, Age 999; then try a second passenger with Age 1000 and PassportNumber 'O1000002'."
+    }
+  ],
+  "expect": [
+    "Age 999 is accepted and saved; Age 1000 is rejected with a validation error on Age."
+  ]
+}

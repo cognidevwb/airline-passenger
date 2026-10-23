@@ -1,0 +1,16 @@
+{
+  "id": "on-usercreated-age-cannot-be-negative",
+  "title": "Age cannot be negative",
+  "source": "staged scenario",
+  "why": "Verifies negative ages are refused.",
+  "setup": [],
+  "steps": [
+    {
+      "n": 1,
+      "does": "On UserCreated, register a passenger with Name 'Neg Age', PassportNumber 'A1000001', Male, Age -1."
+    }
+  ],
+  "expect": [
+    "The request is rejected with a validation error on Age and nothing is saved."
+  ]
+}

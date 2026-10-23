@@ -1,0 +1,492 @@
+{
+  "repository": "airline-passenger",
+  "domain": "Airline passenger registration and management",
+  "rows": 2375,
+  "rows_in_report": 2375,
+  "matches_report": true,
+  "coverage": "pairwise",
+  "personal": "values that cannot belong to a person: example.com, reserved phone ranges, passport and card numbers that cannot be issued",
+  "model": [
+    {
+      "layer": "HTTP · endpoints",
+      "item": "GET api/v1/passenger/{{id}}",
+      "file": "http/get-api-v1-passenger-id.json",
+      "valid": 4,
+      "invalid": 0
+    },
+    {
+      "layer": "HTTP · gRPC",
+      "item": "gRPC PassengerGrpcService/GetById",
+      "file": "http/grpc-passengergrpcservice-getbyid.json",
+      "valid": 0,
+      "invalid": 0
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CompleteRegisterPassenger",
+      "file": "domain/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/CompleteRegisterPassenger.json",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 12
+    },
+    {
+      "layer": "Domain · commands",
+      "item": "CompleteRegisterPassengerMongoCommand",
+      "file": "domain/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/CompleteRegisterPassengerMongoCommand.json",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 12
+    },
+    {
+      "layer": "Domain · events",
+      "item": "PassengerCreatedDomainEvent",
+      "file": "domain/Passenger.Identity.Consumers.RegisteringNewUser.V1/PassengerCreatedDomainEvent.json",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 9
+    },
+    {
+      "layer": "Domain · events",
+      "item": "PassengerRegistrationCompletedDomainEvent",
+      "file": "domain/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/PassengerRegistrationCompletedDomainEvent.json",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 12
+    },
+    {
+      "layer": "Domain · read models",
+      "item": "PassengerReadModel",
+      "file": "domain/Passenger.Passengers.Models/PassengerReadModel.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 12
+    },
+    {
+      "layer": "Domain · requests",
+      "item": "CompleteRegisterPassengerRequestDto",
+      "file": "domain/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/CompleteRegisterPassengerRequestDto.json",
+      "valid": 200,
+      "invalid": 4,
+      "coverage": 12
+    },
+    {
+      "layer": "Domain · responses",
+      "item": "PassengerDto",
+      "file": "domain/Passenger.Passengers.Dtos/PassengerDto.json",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 12
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CompleteRegisterPassengerCommandHandler.Handle",
+      "file": "unit/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/CompleteRegisterPassengerCommandHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "CompleteRegisterPassengerMongoHandler.Handle",
+      "file": "unit/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/CompleteRegisterPassengerMongoHandler/Handle.json",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    },
+    {
+      "layer": "Unit · methods",
+      "item": "Passenger.CompleteRegistrationPassenger",
+      "file": "unit/Passenger.Passengers.Models/Passenger/CompleteRegistrationPassenger.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 9
+    },
+    {
+      "layer": "Database · data access",
+      "item": "Passenger",
+      "file": "database/data-access/Passenger.json",
+      "reads": 2,
+      "writes": 1
+    },
+    {
+      "layer": "Database · stored procedures",
+      "item": "procedures",
+      "file": "database/procedures/README.json",
+      "note": "none in this repository"
+    },
+    {
+      "layer": "Database · tables",
+      "item": "Passenger",
+      "file": "database/tables/Passenger.json",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 12
+    },
+    {
+      "layer": "UI · forms",
+      "item": "forms",
+      "file": "ui/README.json",
+      "note": "none in this repository"
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should complete register passenger and update to db",
+      "file": "flows/completeregisterpassengertests-should-co.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should retrive a passenger by id currectly",
+      "file": "flows/getpassengerbyidtests-should-retrive-a-p.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · from the tests",
+      "item": "should retrive a passenger by id from grpc service",
+      "file": "flows/getpassengerbyidtests-should-retrive-a-p.json",
+      "steps": 2
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Age at the 3-digit limit",
+      "file": "flows/on-usercreated-age-at-the-3-digit-limit.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Age cannot be negative",
+      "file": "flows/on-usercreated-age-cannot-be-negative.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Age zero for a newborn",
+      "file": "flows/on-usercreated-age-zero-for-a-newborn.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Baby type with an adult age",
+      "file": "flows/grpc-passengergrpcservice-getbyid-baby-t.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Deleted passenger is not shown",
+      "file": "flows/get-passenger-id-deleted-passenger-is-no.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Details match the stored record",
+      "file": "flows/get-passenger-id-details-match-the-store.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Duplicate passport number rejected",
+      "file": "flows/on-usercreated-duplicate-passport-number.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Empty Id is rejected",
+      "file": "flows/grpc-passengergrpcservice-getbyid-empty-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Id must be a valid uuid",
+      "file": "flows/get-passenger-id-id-must-be-a-valid-uuid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Id must be provided",
+      "file": "flows/get-passenger-id-id-must-be-provided.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Invalid passenger id",
+      "file": "flows/get-passenger-id-invalid-passenger-id.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest name",
+      "file": "flows/get-passenger-id-longest-name.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest name",
+      "file": "flows/grpc-passengergrpcservice-getbyid-longes.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest passport number",
+      "file": "flows/get-passenger-id-longest-passport-number.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Longest passport number",
+      "file": "flows/grpc-passengergrpcservice-getbyid-longes.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a baby passenger",
+      "file": "flows/grpc-passengergrpcservice-getbyid-look-u.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a passenger with an unknown type",
+      "file": "flows/grpc-passengergrpcservice-getbyid-look-u.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up a recently modified passenger",
+      "file": "flows/grpc-passengergrpcservice-getbyid-look-u.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up an adult female passenger",
+      "file": "flows/grpc-passengergrpcservice-getbyid-look-u.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Look up an adult male passenger",
+      "file": "flows/grpc-passengergrpcservice-getbyid-look-u.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Malformed Id is rejected",
+      "file": "flows/grpc-passengergrpcservice-getbyid-malfor.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Name exactly 50 characters",
+      "file": "flows/on-usercreated-name-exactly-50-character.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Name is required",
+      "file": "flows/on-usercreated-name-is-required.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Name over 50 characters rejected",
+      "file": "flows/on-usercreated-name-over-50-characters-r.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Name with accents and apostrophe",
+      "file": "flows/on-usercreated-name-with-accents-and-apo.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "New passenger gets identity and audit stamps",
+      "file": "flows/on-usercreated-new-passenger-gets-identi.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Newborn age zero",
+      "file": "flows/grpc-passengergrpcservice-getbyid-newbor.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Oldest three-digit age",
+      "file": "flows/get-passenger-id-oldest-three-digit-age.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Oldest three-digit age",
+      "file": "flows/grpc-passengergrpcservice-getbyid-oldest.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Passenger Id does not exist",
+      "file": "flows/grpc-passengergrpcservice-getbyid-passen.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Passenger id does not exist",
+      "file": "flows/get-passenger-id-passenger-id-does-not-e.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Passenger type must be a known value",
+      "file": "flows/on-usercreated-passenger-type-must-be-a-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Passport number exactly 10 characters",
+      "file": "flows/on-usercreated-passport-number-exactly-1.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Passport number is required",
+      "file": "flows/on-usercreated-passport-number-is-requir.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Passport number over 10 characters rejected",
+      "file": "flows/on-usercreated-passport-number-over-10-c.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Register a baby passenger",
+      "file": "flows/on-usercreated-register-a-baby-passenger.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Register a passenger with unknown type",
+      "file": "flows/on-usercreated-register-a-passenger-with.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Register an adult female passenger",
+      "file": "flows/on-usercreated-register-an-adult-female-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Register an adult male passenger",
+      "file": "flows/on-usercreated-register-an-adult-male-pa.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Same name, different passenger",
+      "file": "flows/grpc-passengergrpcservice-getbyid-same-n.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Shortest passport number",
+      "file": "flows/grpc-passengergrpcservice-getbyid-shorte.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Single-character name",
+      "file": "flows/on-usercreated-single-character-name.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Soft-deleted passenger is not returned",
+      "file": "flows/grpc-passengergrpcservice-getbyid-soft-d.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Stored age is invalid",
+      "file": "flows/get-passenger-id-stored-age-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Stored name is invalid",
+      "file": "flows/get-passenger-id-stored-name-is-invalid.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Stored passport number is invalid",
+      "file": "flows/get-passenger-id-stored-passport-number-.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Unknown passenger type",
+      "file": "flows/get-passenger-id-unknown-passenger-type.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View a female passenger",
+      "file": "flows/get-passenger-id-view-a-female-passenger.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View a passenger with edit history",
+      "file": "flows/get-passenger-id-view-a-passenger-with-e.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View an adult passenger",
+      "file": "flows/get-passenger-id-view-an-adult-passenger.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "View an infant passenger",
+      "file": "flows/get-passenger-id-view-an-infant-passenge.json",
+      "steps": 1
+    },
+    {
+      "layer": "Flows · scenarios",
+      "item": "Youngest age",
+      "file": "flows/get-passenger-id-youngest-age.json",
+      "steps": 1
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidAgeException",
+      "file": "errors/invalidageexception-age.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidNameException",
+      "file": "errors/invalidnameexception-name.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidPassengerIdException",
+      "file": "errors/invalidpassengeridexception-passengerid.json",
+      "status": 500
+    },
+    {
+      "layer": "Errors",
+      "item": "InvalidPassportNumberException",
+      "file": "errors/invalidpassportnumberexception-passportnumber.json",
+      "status": 400
+    },
+    {
+      "layer": "Errors",
+      "item": "PassengerNotFoundException",
+      "file": "errors/passengernotfoundexception-getpassengerbyid.json",
+      "status": 404
+    }
+  ]
+}
