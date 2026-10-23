@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/Passenger.Api/Passenger.Api.csproj" />
+  <Project Path="src/Passenger/Passenger.csproj" />
+  <Project Path="tests/ContractTest/Contract.Test.csproj" />
+  <Project Path="tests/IntegrationTest/Integration.Test.csproj" />
+</Solution>
