@@ -9,16 +9,16 @@
   "model": [
     {
       "layer": "HTTP · endpoints",
-      "item": "GET api/v1/passenger/{{id}}",
+      "item": "GET api/v1/passenger/{id}",
       "file": "http/get-api-v1-passenger-id.json",
-      "valid": 4,
+      "valid": 200,
       "invalid": 0
     },
     {
       "layer": "HTTP · gRPC",
       "item": "gRPC PassengerGrpcService/GetById",
       "file": "http/grpc-passengergrpcservice-getbyid.json",
-      "valid": 0,
+      "valid": 200,
       "invalid": 0
     },
     {
