@@ -1,0 +1,14 @@
+{
+  "folder": "database/data-access/",
+  "what": "Each read and write the code makes to a table: rows to seed, the key to look up, the row expected.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Passenger.json",
+      "item": "Passenger",
+      "layer": "Database · data access",
+      "reads": 2,
+      "writes": 1
+    }
+  ]
+}

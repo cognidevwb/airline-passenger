@@ -1,0 +1,23 @@
+{
+  "folder": "exports/sql/",
+  "what": "The same rows as SQL and CSV.",
+  "folders": [],
+  "files": [
+    {
+      "file": "000_reset.sql",
+      "item": "000_reset"
+    },
+    {
+      "file": "010_Passenger.sql",
+      "item": "010_Passenger"
+    },
+    {
+      "file": "010_Passenger_cases.sql",
+      "item": "010_Passenger_cases"
+    },
+    {
+      "file": "010_Passenger_invalid.sql",
+      "item": "010_Passenger_invalid"
+    }
+  ]
+}

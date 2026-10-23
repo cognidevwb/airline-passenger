@@ -1,0 +1,15 @@
+{
+  "folder": "database/tables/",
+  "what": "Rows to load for each table, in load order; exports/sql holds the same rows as INSERT scripts.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Passenger.json",
+      "item": "Passenger",
+      "layer": "Database · tables",
+      "valid": 200,
+      "invalid": 10,
+      "coverage": 12
+    }
+  ]
+}

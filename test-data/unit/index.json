@@ -1,0 +1,15 @@
+{
+  "folder": "unit/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [
+    {
+      "folder": "Passenger.Passengers.Features.CompletingRegisterPassenger.V1/",
+      "files": 2
+    },
+    {
+      "folder": "Passenger.Passengers.Models/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

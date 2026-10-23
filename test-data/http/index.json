@@ -1,0 +1,21 @@
+{
+  "folder": "http/",
+  "what": "Every HTTP endpoint and gRPC call: requests that succeed, requests that must be rejected and the status each gets.",
+  "folders": [],
+  "files": [
+    {
+      "file": "get-api-v1-passenger-id.json",
+      "item": "GET api/v1/passenger/{id}",
+      "layer": "HTTP · endpoints",
+      "valid": 200,
+      "invalid": 0
+    },
+    {
+      "file": "grpc-passengergrpcservice-getbyid.json",
+      "item": "gRPC PassengerGrpcService/GetById",
+      "layer": "HTTP · gRPC",
+      "valid": 200,
+      "invalid": 0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "folder": "database/",
+  "what": "Database test data: tables, stored procedures and data access.",
+  "folders": [
+    {
+      "folder": "data-access/",
+      "files": 1
+    },
+    {
+      "folder": "procedures/",
+      "files": 1
+    },
+    {
+      "folder": "tables/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

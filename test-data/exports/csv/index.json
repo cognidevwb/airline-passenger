@@ -1,0 +1,55 @@
+{
+  "folder": "exports/csv/",
+  "what": "The same rows as SQL and CSV.",
+  "folders": [],
+  "files": [
+    {
+      "file": "CompleteRegisterPassenger.csv",
+      "item": "CompleteRegisterPassenger"
+    },
+    {
+      "file": "CompleteRegisterPassengerCommandHandler-Handle.csv",
+      "item": "CompleteRegisterPassengerCommandHandler-Handle"
+    },
+    {
+      "file": "CompleteRegisterPassengerMongoCommand.csv",
+      "item": "CompleteRegisterPassengerMongoCommand"
+    },
+    {
+      "file": "CompleteRegisterPassengerMongoHandler-Handle.csv",
+      "item": "CompleteRegisterPassengerMongoHandler-Handle"
+    },
+    {
+      "file": "CompleteRegisterPassengerRequestDto.csv",
+      "item": "CompleteRegisterPassengerRequestDto"
+    },
+    {
+      "file": "GET--.csv",
+      "item": "GET--"
+    },
+    {
+      "file": "Passenger-CompleteRegistrationPassenger.csv",
+      "item": "Passenger-CompleteRegistrationPassenger"
+    },
+    {
+      "file": "Passenger.csv",
+      "item": "Passenger"
+    },
+    {
+      "file": "PassengerCreatedDomainEvent.csv",
+      "item": "PassengerCreatedDomainEvent"
+    },
+    {
+      "file": "PassengerDto.csv",
+      "item": "PassengerDto"
+    },
+    {
+      "file": "PassengerReadModel.csv",
+      "item": "PassengerReadModel"
+    },
+    {
+      "file": "PassengerRegistrationCompletedDomainEvent.csv",
+      "item": "PassengerRegistrationCompletedDomainEvent"
+    }
+  ]
+}

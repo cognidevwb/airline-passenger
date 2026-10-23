@@ -1,0 +1,39 @@
+{
+  "folder": "domain/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "CompleteRegisterPassenger.json",
+      "item": "CompleteRegisterPassenger",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 6,
+      "coverage": 12
+    },
+    {
+      "file": "CompleteRegisterPassengerMongoCommand.json",
+      "item": "CompleteRegisterPassengerMongoCommand",
+      "layer": "Domain · commands",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 12
+    },
+    {
+      "file": "CompleteRegisterPassengerRequestDto.json",
+      "item": "CompleteRegisterPassengerRequestDto",
+      "layer": "Domain · requests",
+      "valid": 200,
+      "invalid": 4,
+      "coverage": 12
+    },
+    {
+      "file": "PassengerRegistrationCompletedDomainEvent.json",
+      "item": "PassengerRegistrationCompletedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 8,
+      "coverage": 12
+    }
+  ]
+}

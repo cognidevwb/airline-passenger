@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Passenger.Identity.Consumers.RegisteringNewUser.V1/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "PassengerCreatedDomainEvent.json",
+      "item": "PassengerCreatedDomainEvent",
+      "layer": "Domain · events",
+      "valid": 200,
+      "invalid": 5,
+      "coverage": 9
+    }
+  ]
+}

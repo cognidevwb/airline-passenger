@@ -1,0 +1,11 @@
+{
+  "folder": "vocabulary/",
+  "what": "The domain values the records were written from.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Passenger.json",
+      "item": "Passenger"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "folder": "domain/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [
+    {
+      "folder": "Passenger.Identity.Consumers.RegisteringNewUser.V1/",
+      "files": 1
+    },
+    {
+      "folder": "Passenger.Passengers.Dtos/",
+      "files": 1
+    },
+    {
+      "folder": "Passenger.Passengers.Features.CompletingRegisterPassenger.V1/",
+      "files": 4
+    },
+    {
+      "folder": "Passenger.Passengers.Models/",
+      "files": 1
+    }
+  ],
+  "files": []
+}

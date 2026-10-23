@@ -1,0 +1,15 @@
+{
+  "folder": "domain/Passenger.Passengers.Dtos/",
+  "what": "Domain objects by namespace: commands, events, read models, aggregates, value objects, requests and responses.",
+  "folders": [],
+  "files": [
+    {
+      "file": "PassengerDto.json",
+      "item": "PassengerDto",
+      "layer": "Domain · responses",
+      "valid": 200,
+      "invalid": 7,
+      "coverage": 12
+    }
+  ]
+}

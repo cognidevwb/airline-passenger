@@ -1,0 +1,37 @@
+{
+  "folder": "errors/",
+  "what": "Every exception the code throws: where, the call that triggers it, the status the API answers.",
+  "folders": [],
+  "files": [
+    {
+      "file": "invalidageexception-age.json",
+      "item": "InvalidAgeException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "invalidnameexception-name.json",
+      "item": "InvalidNameException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "invalidpassengeridexception-passengerid.json",
+      "item": "InvalidPassengerIdException",
+      "layer": "Errors",
+      "status": 500
+    },
+    {
+      "file": "invalidpassportnumberexception-passportnumber.json",
+      "item": "InvalidPassportNumberException",
+      "layer": "Errors",
+      "status": 400
+    },
+    {
+      "file": "passengernotfoundexception-getpassengerbyid.json",
+      "item": "PassengerNotFoundException",
+      "layer": "Errors",
+      "status": 404
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "folder": "unit/Passenger.Passengers.Features.CompletingRegisterPassenger.V1/CompleteRegisterPassengerCommandHandler/",
+  "what": "Argument sets for unit tests of each method, by namespace and class. Nested objects are whole records.",
+  "folders": [],
+  "files": [
+    {
+      "file": "Handle.json",
+      "item": "CompleteRegisterPassengerCommandHandler.Handle",
+      "layer": "Unit · methods",
+      "valid": 200,
+      "invalid": 1,
+      "coverage": 1
+    }
+  ]
+}
